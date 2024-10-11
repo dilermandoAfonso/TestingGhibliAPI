@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Compila o código e gera artefatos
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Executa testes automatizados
-                    sh 'npx jest' // ou 'npm test', dependendo da configuração
+                    bat 'npx jest' // ou 'npm test', dependendo da configuração
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Executa ferramentas de análise de qualidade de código
-                    sh 'npx eslint .'
+                    bat 'npx eslint .'
                 }
             }
         }
