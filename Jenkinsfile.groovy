@@ -3,7 +3,7 @@ pipeline {
 
     triggers {
         // Gatilho para execução automática em push e merge request
-        pollSCM('* * * * *') // verifica mudanças a cada minuto, ajuste conforme necessário
+        pollSCM('* * * * *') // verifica mudanças a cada minuto.
     }
 
     stages {
@@ -11,7 +11,6 @@ pipeline {
             steps {
                 script {
                     // Compila o código e gera artefatos
-                    // Exemplo: 
                     sh 'npm install'
                 }
             }
