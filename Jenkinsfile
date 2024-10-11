@@ -29,7 +29,6 @@ pipeline {
             steps {
                 script {
                     // Executa ferramentas de análise de qualidade de código
-                    // Adicione mais ferramentas de análise estática se necessário
                     sh 'npx eslint .'
                 }
             }
